@@ -8,6 +8,7 @@ import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
 
+// TODO: 2021/8/26 生成器 Suppliers
 public class Suppliers {
     // 创建一个集合并填充它：
     public static <T, C extends Collection<T>> C create(Supplier<C> factory, Supplier<T> gen, int n) {
