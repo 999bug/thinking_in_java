@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 
 public class FileToWords {
 
-    // TODO: 2021/8/31 flatMAp()：将元素流的流 扁平化为一个简单的元素流
+    // TODO: 2021/8/31 flatMAp()：将元素 流的流 扁平化为一个简单的元素流
     public static Stream<String> stream(String filePath) throws Exception {
         return Files.lines(Paths.get(filePath))
                 .skip(1) // First (comment) line
