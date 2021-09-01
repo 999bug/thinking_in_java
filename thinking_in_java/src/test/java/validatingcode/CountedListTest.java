@@ -7,6 +7,7 @@ package validatingcode;
 
 import java.util.*;
 
+import com.validatingcode.CountedList;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,0 +1,27 @@
+package com.stream.terminal;// streams/ForEach.java
+// (c)2021 MindView LLC: see Copyright.txt
+// We make no guarantees that this code is fit for any purpose.
+// Visit http://OnJava8.com for more book information.
+
+public class ForEach {
+    static final int SZ = 14;
+
+    public static void main(String[] args) {
+        RandInts.rands().limit(SZ)
+                .forEach(n -> System.out.format("%d ", n));
+        System.out.println();
+        RandInts.rands().limit(SZ)
+                .parallel()
+                .forEach(n -> System.out.format("%d ", n));
+        System.out.println();
+        // TODO: 2021/8/31 在使用 parallel()并行计算后，对于并行流必须使用 forEachOrdered()保证流的顺序性
+        RandInts.rands().limit(SZ)
+                .parallel()
+                .forEachOrdered(n -> System.out.format("%d ", n));
+    }
+}
+/* Output:
+258 555 693 861 961 429 868 200 522 207 288 128 551 589
+551 589 861 555 288 128 429 207 693 200 258 522 868 961
+258 555 693 861 961 429 868 200 522 207 288 128 551 589
+*/

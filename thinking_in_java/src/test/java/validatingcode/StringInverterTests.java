@@ -4,6 +4,8 @@
 // Visit http://OnJava8.com for more book information.
 package validatingcode;
 
+import com.validatingcode.Inverter4;
+import com.validatingcode.StringInverter;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

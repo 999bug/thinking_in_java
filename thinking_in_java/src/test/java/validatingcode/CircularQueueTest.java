@@ -4,6 +4,8 @@
 // Visit http://OnJava8.com for more book information.
 package validatingcode;
 
+import com.validatingcode.CircularQueue;
+import com.validatingcode.CircularQueueException;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;

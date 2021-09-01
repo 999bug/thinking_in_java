@@ -4,6 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 package validatingcode;
 
+import com.validatingcode.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DynamicTest;
