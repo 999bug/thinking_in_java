@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // javac-based annotation processing
-package com.annotations.ano.ifx;
+package com.annotations.ifx;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;

@@ -1,0 +1,23 @@
+package com.annotations;// annotations/StackL.java
+// (c)2021 MindView LLC: see Copyright.txt
+// We make no guarantees that this code is fit for any purpose.
+// Visit http://OnJava8.com for more book information.
+// A stack built on a LinkedList
+
+import java.util.LinkedList;
+
+public class StackL<T> {
+    private LinkedList<T> list = new LinkedList<>();
+
+    public void push(T v) {
+        list.addFirst(v);
+    }
+
+    public T top() {
+        return list.getFirst();
+    }
+
+    public T pop() {
+        return list.removeFirst();
+    }
+}
