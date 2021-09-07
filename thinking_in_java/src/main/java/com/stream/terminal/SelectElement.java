@@ -17,7 +17,7 @@ public class SelectElement {
         // TODO: 2021/9/1 对于并行流，findAny()不会选择第一个元素
         System.out.println(RandInts.rands().parallel().findAny().getAsInt());
         System.out.println("=====");
-        RandInts.rands().limit(10).forEach(System.out::println);
+        RandInts.rands().limit(4).forEach(System.out::println);
         System.out.println("=====");
 
     }

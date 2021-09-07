@@ -3,6 +3,7 @@ package com.stream;// streams/Randoms.java
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
+import java.util.Collections;
 import java.util.Random;
 import java.util.SortedSet;
 import java.util.TreeSet;

@@ -30,7 +30,7 @@ public class UnboundMethodReference {
         };
         System.out.println(makeString.make());
 
-        //  TransformX sp = X::f; 和下面表达的意思是一样的
+          TransformX sp11 = X::f; //和下面表达的意思是一样的
         TransformX sp = new TransformX() {
             @Override
             public String transform(X x) {

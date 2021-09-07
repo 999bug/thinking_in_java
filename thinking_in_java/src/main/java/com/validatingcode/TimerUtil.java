@@ -5,17 +5,16 @@ package com.validatingcode;// onjava/Timer.java
 
 import static java.util.concurrent.TimeUnit.*;
 
-public class Timer {
+public class TimerUtil {
     private long start = System.nanoTime();
 
     public long duration() {
-        return NANOSECONDS.toMillis(
-                System.nanoTime() - start);
+        return NANOSECONDS.toMillis(System.nanoTime() - start);
     }
 
     public static long duration(Runnable test) {
-        Timer timer = new Timer();
+        TimerUtil timerUtil = new TimerUtil();
         test.run();
-        return timer.duration();
+        return timerUtil.duration();
     }
 }
