@@ -13,11 +13,11 @@ public class BadMicroBenchmark {
         try { // For machines with insufficient memory
             long[] la = new long[SIZE];
             System.out.println("setAll: " +
-                    TimerUtil.duration(() ->
+                    TimerUtils.duration(() ->
                             Arrays.setAll(la, n -> n)));
 
             System.out.println("parallelSetAll: " +
-                    TimerUtil.duration(() ->
+                    TimerUtils.duration(() ->
                             Arrays.parallelSetAll(la, n -> n)));
         } catch (OutOfMemoryError e) {
             System.out.println("Insufficient memory");
